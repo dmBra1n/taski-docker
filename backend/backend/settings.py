@@ -1,13 +1,17 @@
 import os
 from pathlib import Path
 
+from dotenv import load_dotenv
+
+load_dotenv()
+
 BASE_DIR = Path(__file__).resolve().parent.parent
 
 SECRET_KEY = os.getenv('SECRET_KEY', default='TOKEN')
 
 DEBUG = False
 
-ALLOWED_HOSTS = ['51.250.110.115', '127.0.0.1', 'localhost', 'studykittygram.hopto.org']
+ALLOWED_HOSTS = ['51.250.110.115', '127.0.0.1', 'localhost', 'studydmbrain.hopto.org']
 
 
 # Application definition
